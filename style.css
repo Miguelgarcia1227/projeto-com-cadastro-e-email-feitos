@@ -1,0 +1,35 @@
+@font-face {
+    font-family: principal;
+    src: url(/Fonts/Roboto-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 90px;
+}
+
+.container {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h1 {
+    color: aqua;
+}
+
+.imgs img{
+    width: 20%;
+    border-radius: 10px;
+}
+
+.texto p {
+    font-family: 'roboto', sans-serif;
+}

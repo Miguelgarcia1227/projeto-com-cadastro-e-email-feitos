@@ -1,0 +1,502 @@
+.titu_trata_princi {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+    font-size: 5vw;
+    font-family: "minhaFonte";
+    text-shadow: 1px 1px 2px #000000, 0 0 5px #666666;
+
+}
+
+.quadro {
+    background-color: white; 
+    width: 80%; 
+    max-width: 70vw; 
+    height: auto; 
+    margin-top: 2%;
+    padding: 2vw; 
+    position: relative; 
+    margin-left: 13.5%;
+    border-radius: 3vw; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__quadro {
+    position: relative;
+    display: flex;
+}
+
+/* Estilo para a imagem */
+.imagem {
+    position: relative;
+    width: auto; 
+    height: 30vw; 
+    margin-right: 2%;
+    border-radius: 5%;
+}
+
+/* Contêiner para o título e texto */
+.texto {
+    position: relative;
+    width: 60%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Estilo para o título */
+.titulo {
+    position: relative;
+    font-size: 3vw; 
+    margin-bottom: 1rem; 
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para o texto */
+.texto p {
+    position: relative;
+    font-size: 1.5vw; /* Ajusta o tamanho do texto */
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 27%; /* Remove margens extras */
+    margin-left: -50%;
+}
+
+.btn- {
+    position: relative;
+    background-color: #134B70; 
+    color: #fff; 
+    width: 20%;
+    border: none; 
+    border-radius: 0.6vw; 
+    padding: 0.5% 1%;  
+    margin-left: 60%;
+    margin-top: -10%;
+    font-size: 1.3vw; 
+    cursor: pointer; 
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-:hover {
+    background-color: #508C9B;
+}
+
+.conteiner__bt_carrocel {
+    position: relative;
+    margin-top: 5%;
+}
+
+
+.inv {
+    position: relative;
+    margin: 6rem;
+    opacity: 0;
+}
+
+
+
+.Ant {
+    position: relative;
+    background-color: #134B70; 
+    color: #fff; 
+    border: none; 
+    border-radius: 1vw; 
+    margin-left: 42%;
+    padding: 0.4% 1%; 
+    font-size: 1.3vw; 
+    cursor: pointer; 
+    transition: padding-left 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.Ant::before {
+    position: relative;
+    content: '←';
+    margin-right: 1%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(-10%);
+}
+
+.Ant:hover {
+    padding-left: 1%;
+}
+
+.Ant:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Prox {
+    position: relative;
+    background-color: #134B70; 
+    color: #fff; 
+    border: none; 
+    border-radius: 1vw; 
+    padding: 0.4% 1%;
+    font-size: 1.3vw;
+    cursor: pointer; 
+    transition: padding-right 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Prox::after {
+    content: '→';
+    margin-left: 1%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+}
+
+.Prox:hover {
+    padding-right: 1%;
+}
+
+.Prox:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+.inv_linha {
+    position: relative;
+    padding: 1rem;
+    opacity: 0%;
+    margin-top: -2.8%;
+}
+
+
+.avançadoDois {
+    display: none;
+    position: fixed;
+    margin-left: 32%;
+    margin-top: -33%;
+    background-color: rgb(73, 178, 196);
+    border-radius: 13px;
+    width: 40%;
+    height: 24.6vw;
+    opacity: 100;
+    box-shadow: 0 0 2000px rgb(0, 0, 0);
+    z-index: 9999;
+}
+
+.modal-title {
+    display: flex;
+    margin-left: 27%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 2.5vw;
+    color: #c2bfbf;
+    text-shadow: 0.5px 1px grey, 1px 2px grey;
+
+}
+
+.modal-body h2 {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 2vw;
+    font-family: "Inknut Antiqua", serif;
+}
+
+.modal-body h4{
+    position: relative;
+    font-size: 1.4vw;
+    margin-left: 3%;
+    font-family: "Inknut Antiqua", serif;
+}
+
+.text_linha_aperte {
+    position: relative;
+    display: flex;
+}
+
+.bt_aperte {
+    font-family: "Inknut Antiqua", serif;
+    position: relative;
+    font-size: 1.5vw;
+    margin-left: 1%;
+    color: #0f688e;
+}
+
+.bt_aperte:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.linha_invi {
+    position: relative;
+    opacity: 0;
+}
+
+
+.pg_odontoPediatra:hover {
+    font-size: 1.6vw;
+}
+
+.pg_odontoGeriatria:hover {
+    font-size: 1.6vw;
+}
+
+
+
+.modal-body{
+    position: relative;
+    margin-top: -1%;
+}
+
+.modal-header{    
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-color: rgba(26, 125, 142);
+}
+
+.btn-default {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 1.6% 4.5%;
+    font-size: 1.3vw;
+    font-family: "Inknut Antiqua", serif;
+    border-radius: 5px;
+    color: rgb(248, 248, 248);
+    background-color: rgba(26, 125, 142); 
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+.btn-default:hover {
+    background-color: rgb(46, 198, 224); 
+    color: #296c75;
+}
+
+.bt_agendar {
+    position: relative;
+    margin-left: 40%;
+    margin-top: 2%;
+    font-size: 1.3vw;
+    font-family: "Inknut Antiqua", serif;
+    padding: 2% 3%;
+    background-color: rgb(61, 120, 131); 
+    color: #fff; 
+    border-radius: 10px;
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+.bt_agendar:hover {
+    background-color: rgb(46, 198, 224); 
+    color: #296c75;
+}
+
+.modal-footer{
+    position: relative;
+    margin-top: 3%;
+    background-color: rgb(255, 255, 255); 
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 5vw;
+}
+
+.linha_divi {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    opacity: 0;
+}
+
+.linha_divi_2 {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+
+
+.container__tabelinha {
+    border-radius: 15px;
+    display: flex;
+    background-color: #508C9B;
+    margin-top: -2%;
+    margin-right: 5%;
+    height: 4vw;
+    width: auto;
+    float: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598), 0 6px 20px rgba(0, 0, 0, 0.616);
+}
+
+.tabelinha_principal {
+    color: white;
+    font-size: 1.1vw;
+}
+
+.container__rodape {
+    background-color: #134B70;
+    height: 110%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598), 0 6px 20px rgba(0, 0, 0, 0.616);
+}
+
+.central {
+    position: relative;
+    color: rgb(194, 194, 194);
+    display: flex;
+    font-size: 1.6vw;
+    margin-left: 10%;
+}
+
+.central1 {
+    display: flex;
+    font-size: 2vw;
+    margin-left: 10%;
+    margin-top: 2em;
+    color: #508C9B;
+}
+
+.container__linha_1 {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1em;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.container__imagens {
+    display: flex;
+    position: relative;
+    margin-left: 48%;
+    margin-top: -14.5%;
+}
+
+
+.container__linha_pé {
+    display: flex;
+    border: 1px solid black;
+}
+
+.certi {
+    display: flex;
+    font-size: 2vw;
+    color: #508C9B;
+}
+
+.container__2barra {
+    position: relative;
+    margin-bottom: 2%;
+    width: auto;
+    height: 14vw;
+}
+
+.container__3barra {
+    position: relative;
+    margin-top: 2%;
+    width: auto;
+    height: 10vw;
+}
+
+.container__4barra {
+    position: relative;
+    width: auto;
+    height: 10vw;
+}
+
+.texto1 {
+    color: rgb(194, 194, 194);
+    position: relative;
+    margin-left: 10%;
+}
+
+.container__privacidade {
+    margin: 0 0 8em;
+    margin-top: -11.8em;
+    margin-left: 50em;
+}
+
+.container__titulo2 {
+    display: flex;
+    margin-top: 2%;
+    font-size: 2.2vw;
+    color: #508C9B;
+}
+
+.container__titulo3 {
+    display: flex;
+    font-size: 2.2vw;
+    color: #508C9B;
+}
+
+.container__texto2 {
+    position: relative;
+    margin-top: 0.6em;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.container__texto2 a {
+    position: relative;
+    color: rgb(194, 194, 194);
+}
+
+
+.container__texto3 {
+    display: flex;
+    margin-top: -0.5em;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.container__linha_2 {
+    margin: 0 5em;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.container__color {
+    color: #508C9B;
+}
+
+.container__chao {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 7%;
+}
+
+.container__img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__img_1 {
+    position: relative;
+    margin-left: 9%;
+    width: auto;
+    height: 7vw;
+}
+
+.container__img_2 {
+    position: relative;
+    width: auto;
+    height: 7vw;
+    margin-right: 9.3%;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.container__redes {
+    position: relative;
+    color: #508C9B;
+    font-size: 2vw;
+    margin-bottom: 1%;
+}
+
+.container__texto3 a {
+    color: black;
+}
+
+

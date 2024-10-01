@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Exclusão - Morvan Dermatologia</title>
+    <style>
+        /* Reset de margens e paddings para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilização do Container */
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        /* Estilização do Header */
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            color: #003366;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+            color: #003366;
+        }
+
+        /* Estilização da Mensagem */
+        .message {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Estilização dos Botões */
+        button, a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0.5rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button {
+            background-color: #28a745; /* Verde */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838; /* Verde escuro */
+        }
+
+        a {
+            background-color: #dc3545; /* Vermelho */
+            color: white;
+        }
+
+        a:hover {
+            background-color: #c82333; /* Vermelho escuro */
+        }
+
+        /* Estilização do Link de Cancelamento */
+        .cancel-link {
+            margin-top: 1rem;
+            display: block;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Morvan Dermatologia</h1>
+            <h2>Confirmar Exclusão</h2>
+        </div>
+        <p class="message">Tem certeza de que deseja excluir "{{ agendamento.nome_paciente }}"?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Confirmar</button>    
+        </form>
+        <a href="{% url '' %}" class="cancel-link">Cancelar</a>
+    </div>
+    <script>
+        // Adicione scripts JavaScript aqui, se necessário
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Página de confirmação carregada e pronta.');
+        });
+    </script>
+</body>
+</html>
+

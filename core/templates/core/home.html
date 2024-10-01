@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    
+    <title>Página-inicial</title>
+</head>
+<body>
+    
+    <nav>
+         
+          <header id="menu" class="container__barra">
+                   <a href="{% url 'home' %}"><img id="img_principal"  class="container__logo" src="{% static 'img/logoprincipal.png' %}" alt="Logo da Odonto Locchi"></a>
+              <hr class="linha">
+              <div id="id_bt_logar" class="container__logar">
+                <a class="bt_logar" href='#'>Logar</a>
+            </div>
+                <div id="id_Login" class="modal_login">
+                    <a href="{%url 'login'%}" class="Login_paciente">Paciente</a>
+                    <hr class="linha_modal_Login">
+                    <a href="{%url 'loginmedico'%}" class="Login_medico">Médico</a>
+                    <hr class="linha_modal_Login">
+                    <a href="/admin" class="Login_ADM">Admin</a>
+                </div>
+                  <ul class="container__header">
+                      <li><a class="bt1" href="/home">Início</a></li>
+                      <li><a class="bt2" href="{% url 'quemsomos' %}">Quem Somos</a></li>
+
+                      <li><a id="bt3" href="/Bytech-Pagina tratamentos/index (1).html">Tratamentos</a>
+                            <div id="modal_id"  class="modal_class">
+                                <a href="{% url 'dentista' %}" class="pg_dentista">Dentista</a>
+                                <br>   
+                                <hr class="linha_modal">
+                                <a href="{% url 'cirurgia' %}" class="pg_cirurgia">Cirurgia</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'implante' %}" class="pg_impalnte">Implante</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'protese' %}" class="pg_endorfina">Prótese</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'invisalign' %}" class="pg_invisaling">Invisalign</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'ortodontia' %}" class="pg_ortodontia">Ortondontia</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'pediatra' %}" class="pg_odontoPediatra">Odonto Pediatra</a>
+                                <br>
+                                <hr class="linha_modal">
+                                <a href="{% url 'geri' %}" class="pg_odontoGeriatria">Odonto Geriatria</a>
+                                <br>
+                            </div></li>
+
+                      <li><a class="bt4" href="{% url 'planos' %}">Planos</a></li>
+                      <li><a class="bt5" href="{% url 'novo_agendamento' %}">Agendar</a></li>
+                     
+
+                  </ul>
+                  
+                 
+                    <hr class="linha_invi_teste">
+            </header>
+     </nav>
+
+     <main>
+        <div class="slider">
+
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+
+                <div class="slide firt">
+                    <img class="img_1" src="{% static 'img/smile__nige.jpg' %}" alt=""/>
+                </div>
+
+                <div class="slide">
+                    <img  class="img_2" src="{% static 'img/teste_smile.jpg' %}" alt=""/>
+                </div>
+
+                <div class="slide">
+                    <img  class="img_3" src="{% static 'img/teste_smile_2.jpg' %}" alt=""/>
+                </div>
+
+                <div class="slide">
+                    <img  class="img_4" src="{% static 'img/smile_3.jpeg' %}"  alt=""/>
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4 "></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+        <a href="{% url 'agendamento' %}" class="bt_agendar">Agendar</a>
+
+
+        <hr class="linha_divi">
+
+        
+        <div class="formacao">
+            <img class="img_sala" src="{% static 'img/sala.png' %}" alt="">
+        </div>
+
+        <img src="{% static 'img/formacoes.png' %}" alt="" class="formacoes">
+
+
+            <div class="container__text_forma">
+
+                <h2 class="titu_forma">Melhor espaço Odontológico Vila Romana</h2>
+
+                <h4 class="text_forma">Nosso espaço conta com ambientes cuidadosamente</h4>
+                <h4 class="text_forma">personalizados, aconchegantes e acolhedores, oferecendo</h4>
+                <h4 class="text_forma">ao paciente uma experiência agradável durante todas as</h4>
+                <h4 class="text_forma">fases do seu tratamento odontológico.</h4>
+
+            </div>
+            <a class="bt_saibaMais_1" href="#">Saiba Mais</a>
+
+
+            <div class="container__backTrata1">
+
+                <hr class="linha_1_trata">
+
+                <h1 class="titu_trata1">Tratamentos especializados</h1>
+
+                <hr class="linha_2_trata">
+
+            </div>
+            <div class="container__cartas">
+
+                <div class="container__cd_clareamento">
+                    <img src="{% static 'img/img_silver.png' %}" alt="" class="medalha_silver">
+
+                    <img src="{% static 'img/img_boca_trata.png' %}" alt="" class="img_clareamento">
+                
+                    <h2 class="titu_clareamento">Clareamento</h2>
+                
+                    <hr class="linha_carta_1">
+
+                    <a href="#" class="saibaMaisTrata">Saiba Mais</a>
+                </div>
+
+                <div class="container__cd_invisalign">
+                    <img src="{% static 'img/img_gold.png' %}" alt="" class="medalha_gold">
+
+                    <img src="{% static 'img/img_invisa.png' %}" alt="" class="img_invisa">
+                
+                    <h2 class="titu_invisa">Invisalign</h2>
+                
+                    <hr class="linha_carta_2">
+
+                    <a href="#" class="saibaMaisTrata2">Saiba Mais</a>
+
+                </div>
+
+                <div class="container__cd_implante">
+                    <img src="{% static 'img/img_bronze.png' %}" alt="" class="medalha_bronze">
+
+                    <img src="{% static 'img/img_implante.png' %}" alt="" class="img_implate">
+                
+                    <h2 class="titu_implante">Implante</h2>
+                
+                    <hr class="linha_carta_3">
+
+                    <a href="#" class="saibaMaisTrata3">Saiba Mais</a>
+
+                </div>
+
+            </div>
+
+            <hr class="linha_divi4">
+
+
+            <div class="container__trata">
+
+                <img src="{% static 'img/tratamentos2.png' %}" alt="" class="img_tratamentos">
+
+                <div class="container__text_trata">
+
+                    <h3 class="titu_tratamentos">Nossos Tratamentos</h3>
+
+                    <h5 class="text_tratamentos">Dentes saudáveis e um sorriso harmônico podem melhorar a</h5>
+                    <h5 class="text_tratamentos">autoestima, influenciando em aspectos da vida social, profissional</h5>
+                    <h5 class="text_tratamentos">e pessoal dos pacientes. Por isso, a odontologia moderna não se</h5>
+                    <h5 class="text_tratamentos">limita apenas na estética. A saúde bucal é fundamental para a</h5>
+                    <h5 class="text_tratamentos">saúde do corpo humano como um todo. Buscamos lhe oferecer</h5>
+                    <h5 class="text_tratamentos">além de novo sorriso agradável, saúde ao corpo inteiro.</h5>
+            
+                    <a href="#" class="agendarConsulta">Agendar Consulta</a>
+
+                </div>
+            </div>
+
+
+            <hr class="linha_divi2">
+            <div class="backDepoimentos">
+
+                <hr class="linha_invi">
+               <h1 class="titu_depoimentos">Depoimentos</h1>
+
+           </div> 
+           
+
+            <div class="container__depoimentos">
+                <div class="container__depCaio">
+                    <img src="{% static 'img/img_caio.png' %}" alt="" class="ft_caio">
+
+                    <h3 class="text_caio">Tratamento de primeira, me atenderam perfeitamente</h3>
+                    <h3 class="text_caio">e foram muito atenciosos comigo. Fiz o tratamento de</h3>
+                    <h3 class="text_caio">canal e no mesmo dia que foi descoberto já foi retirado.</h3>
+                    <h3 class="text_caio">Recomendo a todos que conheça a Odonto Locchi</h3>
+
+                    <img src="{% static 'img/img_estrelas2.png' %}" alt="" class="img_estrala1">
+
+                    <h2 class="text_nome">Caio Galvão</h2>
+                    <h3 class="sub_status">Paciente</h3>
+                </div>
+
+
+                <div class="container__deJonny">
+                    <img src="{% static 'img/img_jonny.png' %}" alt="" class="ft_jonny">
+
+                    <h3 class="text_jonny">Fui muito bem atendido, atendimento</h3>
+                    <h3 class="text_jonny">rapido e eficiente, estava precisando de</h3>
+                    <h3 class="text_jonny">agilidade e eles me entregaram o que</h3>
+                    <h3 class="text_jonny">pedi.</h3>
+                
+                    <img src="{% static 'img/img_estrelas2.png' %}" alt="" class="img_estrala2">
+
+                    <h2 class="text_nome2">Jonny Morets</h2>
+                    <h3 class="sub_status2">Paciente</h3>
+                </div>
+
+
+                <div class="container__deDR">
+                    <img src="{% static 'img/img_dr.png' %}" alt="" class="ft_DR">
+
+                    <h3 class="text_DR">Sou dentista a mais de 20 anos e nunca havia me</h3>
+                    <h3 class="text_DR">deparado com um atendimento como esse. Fui</h3>
+                    <h3 class="text_DR">tratar uma cárie no pré-molar inferior direto e</h3>
+                    <h3 class="text_DR">fui super bem atendido, e em questão de</h3>
+                    <h3 class="text_DR">segundosfoi resolvido o problema e com perfeição.</h3>
+                
+                    <img src="{% static 'img/img_estrelas2.png' %}" alt="" class="img_estrala3">
+
+                    <h2 class="text_nome3">Yuri Alberto</h2>
+                    <h3 class="sub_status3">Paciente</h3>
+                </div>
+            </div>
+
+
+
+
+        
+
+           
+
+     </main>
+
+
+
+     
+   <div class="container__tabelinha">
+
+    <img src="{% static 'img/horario.png.png' %}" alt="logo de horario">
+       <h4 class="tabelinha_principal">Horarios Seg - Sex: 08:00 - 18:00</h4>
+    <img src="{% static 'img/telefone.png.png' %}" alt="logo do telefone">
+       <h4 class="tabelinha_principal">+55 (11) 9-9369-8558</h4>
+    <img src="{% static 'img/email.png.png' %}" alt="logo do email">
+       <h4 class="tabelinha_principal">Plocchi@terra.com.br</h4>
+  </div> 
+
+
+
+   <footer class="container__rodape"> 
+        
+          <div class="container__central_ajuda"> 
+              <h3 class="central1">Central De Ajuda:</h3>
+              <h5 class="central">Dúvidas, reclamações</h5>
+              <h5 class="central"> e sugestões:</h5>
+              <h5 class="central">+55 (11) 9-9369-8558</h5>
+          </div>
+
+         <div class="container__odonto_locchi">
+
+              <hr class="container__linha_1">
+
+
+          <div class="texto1">
+             <h3 class="container__titulo2">A Odonto locchi</h3>
+             <p></p>
+             <h5 class="container__texto2"><a class="bt_rd" href="/index/quemsomos.html">Quem somos</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a class="bt_rd" href="/Bytech-Pagina tratamentos/index (1).html">Nossos tratamentos</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a class="bt_rd" href="https://web.whatsapp.com/">Central de ajuda</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a class="bt_rd" href="/index/contato.html">Contato</a></h5>
+             <p></p>
+         </div>
+
+         <div class="container__imagens">
+            <img class="container__2barra" src="{% static 'img/qrcode1.png' %}" alt="primeiro qrcode">
+            <img class="container__3barra" src="{% static 'img/redebrasil.png' %}"alt="rede brasil">
+            <img class="container__4barra" src="{% static 'img/qrcode2.png' %}" alt="segundo qrcode">
+          </div>
+
+         <hr class="container__linha_2">
+        <div class="container__chao">
+            <h2 class="container__redes">Siga a <strong class="container__color">Odonto Locchi</strong>nas redes sociais</h2> 
+            <h3 class="container__redes">Certificações de Segurança</h3>
+        </div>
+        <div class="container__img">
+               <img class="container__img_1" src="{% static 'img/redessociais.png' %}" alt="logos de redes sociais">
+               <img class="container__img_2" src="{% static 'img/proteçãodedados.png' %}" alt="logos das proteções de dados">
+        </div>
+            
+        <hr class="linha_invi">
+   </footer>
+     
+</body>
+
+<script src="{%static 'js/script.js'%}"></script>
+</html>

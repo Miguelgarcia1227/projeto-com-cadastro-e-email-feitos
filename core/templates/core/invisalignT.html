@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/invisalign.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+
+    <title>Invisalign</title>
+</head>
+
+<body>
+    <nav>
+         
+        <header id="menu" class="container__barra">
+            <a href="{% url 'home' %}"><img id="img_principal"  class="container__logo" src="{% static 'img/logoprincipal.png' %}" alt="Logo da Odonto Locchi"></a>            <hr class="linha">
+            <div id="id_bt_logar" class="container__logar">
+              <a class="bt_logar" href='#'>Logar</a>
+          </div>
+              <div id="id_Login" class="modal_login">
+                  <a href="{%url 'login'%}" class="Login_paciente">Paciente</a>
+                  <hr class="linha_modal_Login">
+                  <a href="{%url 'loginmedico'%}" class="Login_medico">Médico</a>
+                  <hr class="linha_modal_Login">
+                  <a href="/admin" class="Login_ADM">Admin</a>
+              </div>
+                <ul class="container__header">
+                    <li><a class="bt1" href="/home">Início</a></li>
+                    <li><a class="bt2" href="{% url 'quemsomos' %}">Quem Somos</a></li>
+
+                    <li><a id="bt3" href="/Bytech-Pagina tratamentos/index (1).html">Tratamentos</a>
+                          <div id="modal_id"  class="modal_class">
+                              <a href="{% url 'dentista' %}" class="pg_dentista">Dentista</a>
+                              <br>   
+                              <hr class="linha_modal">
+                              <a href="{% url 'cirurgia' %}" class="pg_cirurgia">Cirurgia</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'implante' %}" class="pg_impalnte">Implante</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'protese' %}" class="pg_endorfina">Prótese</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'invisalign' %}" class="pg_invisaling">Invisalign</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'ortodontia' %}" class="pg_ortodontia">Ortondontia</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'pediatra' %}" class="pg_odontoPediatra">Odonto Pediatra</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'geri' %}" class="pg_odontoGeriatria">Odonto Geriatria</a>
+                              <br>
+                          </div></li>
+
+                    <li><a class="bt4" href="{% url 'planos' %}">Planos</a></li>
+                    <li><a class="bt5" href="{% url 'agendamento' %}">Agendar</a></li>
+                  
+
+                </ul>
+                
+               
+                  <hr class="linha_invi_teste">
+          </header>
+   </nav>
+   <h1 class="titu_trata_princi">Tratamenos</h1>
+
+
+    <hr class="inv_linha">
+
+    <div class="conteiner__bt_carrocel">
+
+        <a class="Ant" href="{% url 'protese' %}">Anterior</a>
+        <a class="Prox" href="{% url 'ortodontia' %}">Proximo</a>
+
+    </div>
+
+    <div class="quadro">
+        <div class="container__quadro">
+            <img class="imagem" src="{% static 'img/img-tratamentos/Invisalign.png' %}" alt="dentista">
+            <h1 class="titulo">invisalign</h1>
+            <div class="texto">
+                <p> O Invisalign é um tratamento ortodôntico confortável e previsível que utiliza alinhadores finos e
+                    transparentes para alinhar os dentes. Esses alinhadores são personalizados, moldados de forma
+                    individual e são discretos, sendo removíveis. O tratamento é conhecido por sua comodidade, rapidez e
+                    pela redução das visitas ao consultório.
+                </p>
+            </div>
+        </div>
+        <button type="button" class="btn-" id="bt_agendar_modal" data-bs-toggle="modal" data-bs-target="#myModal">
+            Agendar
+        </button>
+    </div>
+
+
+
+
+
+    <div id="container__modal" class="avançadoDois">
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <hr class="linha_invi">
+                        <h4 class="modal-title" id="myModalLabel">Preços e Outros</h4>
+                        <hr class="linha_invi">
+
+                    </div>
+                    <div class="modal-body">
+                        <h2>Preço:</h2>
+
+                        <h4>Valores de consultas a partir de R$6000</h4>
+
+                        <h2>Outro:</h2>
+
+                        <div class="text_linha_aperte">
+                            <h4>Saiba mais sobre nossos planos.</h4> <a class="bt_aperte" href="#"> Aperte aqui</a>
+                        </div>
+                        <div class="text_linha_aperte">
+                            <h4>Conheça nossas clinicas.</h4> <a class="bt_aperte" href="#"> Aperte aqui</a>
+                        </div>
+                        <div class="text_linha_aperte">
+                            <h4>Saiba mais sobre nós.</h4> <a class="bt_aperte" href="#"> Aperte aqui</a>
+                        </div>
+                    </div>
+                    <hr class="linha_invi">
+                    <div class="modal-footer">
+
+                        <a class="bt_agendar" href="#">Agende sua Consulta</a>
+                        <button type="button" id="bt_fechar" class="btn btn-default"
+                            data-bs-dismiss="modal">Fechar</button>
+
+                    </div>
+                    <hr class="linha_invi">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="linha_divi">
+
+    <div class="container__tabelinha">
+
+        <img src="{% static 'img/horario.png.png' %}" alt="logo de horario">
+           <h4 class="tabelinha_principal">Horarios Seg - Sex: 08:00 - 18:00</h4>
+        <img src="{% static 'img/telefone.png.png' %}" alt="logo do telefone">
+           <h4 class="tabelinha_principal">+55 (11) 9-9369-8558</h4>
+        <img src="{% static 'img/email.png.png' %}" alt="logo do email">
+           <h4 class="tabelinha_principal">Plocchi@terra.com.br</h4>
+      </div> 
+    
+    
+    
+       <footer class="container__rodape"> 
+            
+              <div class="container__central_ajuda"> 
+                  <h3 class="central1">Central De Ajuda:</h3>
+                  <h5 class="central">Dúvidas, reclamações</h5>
+                  <h5 class="central"> e sugestões:</h5>
+                  <h5 class="central">+55 (11) 9-9369-8558</h5>
+              </div>
+    
+             <div class="container__odonto_locchi">
+    
+                  <hr class="container__linha_1">
+    
+    
+              <div class="texto1">
+                 <h3 class="container__titulo2">A Odonto locchi</h3>
+                 <p></p>
+                 <h5 class="container__texto2"><a href="/index/quemsomos.html">Quem somos</a></h5>
+                 <p></p>
+                 <h5 class="container__texto2"><a href="/Bytech-Pagina tratamentos/index (1).html">Nossos tratamentos</a></h5>
+                 <p></p>
+                 <h5 class="container__texto2"><a href="https://web.whatsapp.com/">Central de ajuda</a></h5>
+                 <p></p>
+                 <h5 class="container__texto2"><a href="/index/contato.html">Contato</a></h5>
+                 <p></p>
+             </div>
+    
+             <div class="container__imagens">
+                <img class="container__2barra" src="{% static 'img/qrcode1.png' %}" alt="primeiro qrcode">
+                <img class="container__3barra" src="{% static 'img/redebrasil.png' %}"".png" alt="rede brasil">
+                <img class="container__4barra" src="{% static 'img/qrcode2.png' %}" alt="segundo qrcode">
+              </div>
+    
+             <hr class="container__linha_2">
+            <div class="container__chao">
+                <h2 class="container__redes">Siga a <strong class="container__color">Odonto Locchi</strong>nas redes sociais</h2> 
+                <h3 class="container__redes">Certificações de Segurança</h3>
+            </div>
+            <div class="container__img">
+                   <img class="container__img_1" src="{% static 'img/redessociais.png' %}" alt="logos de redes sociais">
+                   <img class="container__img_2" src="{% static 'img/proteçãodedados.png' %}" alt="logos das proteções de dados">
+            </div>
+                
+            <hr class="linha_invi">
+       </footer>
+         
+    </body>
+    
+    <script src="{%static 'js/script.js'%}"></script>
+</html>

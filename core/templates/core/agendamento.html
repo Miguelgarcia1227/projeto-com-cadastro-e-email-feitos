@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=x, initial-scale=1.0">
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/agendamento.css' %}">
+
+    <title>Agendamentos</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+         
+            <header id="menu" class="container__barra">
+                     <img id="img_principal"  class="container__logo" src="{% static 'img/logoprincipal.png' %}" alt="Logo da Odonto Locchi">
+                     <img id="img_escova"  class="container__escova" src="{% static 'img/escova.png' %}" alt="escova de dente">
+                <hr class="linha">
+      
+                    <ul class="container__header">
+                        <li><a class="bt1" href="/home">Início</a></li>
+                        <li><a class="bt2" href="{% url 'quemsomos' %}">Quem Somos</a></li>
+  
+                        <li><a id="bt3" href="/Bytech-Pagina tratamentos/index (1).html">Tratamentos</a>
+                              <div id="modal_id"  class="modal_class">
+                                  <a href="{% url 'dentista' %}" class="pg_dentista">Dentista</a>
+                                  <br>   
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'cirurgia' %}" class="pg_cirurgia">Cirurgia</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'implante' %}" class="pg_impalnte">Implante</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'protese' %}" class="pg_endorfina">Prótese</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'invisalign' %}" class="pg_invisaling">Invisalign</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'ortodontia' %}" class="pg_ortodontia">Ortondontia</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'pediatra' %}" class="pg_odontoPediatra">Odonto Pediatra</a>
+                                  <br>
+                                  <hr class="linha_modal">
+                                  <a href="{% url 'geri' %}" class="pg_odontoGeriatria">Odonto Geriatria</a>
+                                  <br>
+                              </div></li>
+  
+                        <li><a class="bt4" href="{% url 'planos' %}">Planos</a></li>
+                        <li><a class="bt5" href="{% url 'agendamentos.urls' %}">Agendar</a></li>
+                      
+  
+                    </ul>
+                    
+                  <div id="id_bt_logar" class="container__logar">
+                      <a class="img_pessoa" href='#'>Logar</a>
+                  </div>
+                  <div class="conteiner__logar2">
+                      <img class="container__bolinha" src="{% static 'img/pessoa.png' %}" alt="bolinha de pessoa">
+                  </div>
+                      <div id="id_Login" class="modal_login">
+                          <a href="{%url 'login'%}" class="Login_paciente">Paciente</a>
+                          <hr class="linha_modal_Login">
+                          <a href="{%url 'loginmedico'%}" class="Login_medico">Médico</a>
+                          <hr class="linha_modal_Login">
+                          <a href="/admin" class="Login_ADM">Admin</a>
+                      </div>
+              </header>
+       </nav>
+
+    </header>
+
+
+    {% include 'agendamento_project/agendamento_list' %}
+
+    
+    
+</body>
+
+
+<script src="{%static 'js/script.js'%}"></script>
+</html>

@@ -1,0 +1,1465 @@
+:root {
+    --cor-de-fundo: rgb(255, 255, 255);
+    --cor-do-header-absoluto: #0F90B4;
+    --cor-do-header: #2da3b3;
+    --cor-das-palavras-hb: black;
+    --cor-das-palavras-principais: white;
+}
+
+@font-face {
+    font-family: "minhaFonte";
+    src: url('/core/static/Fonts/Sevillana-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.7s;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: "minhaFonte";
+}
+
+.container__cabecario_absoluto {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-do-header-absoluto);
+    width: 100%;
+    height: 2vw;
+}
+
+strong {
+    color: var(--cor-das-palavras-principais);
+}
+
+
+.container__absoluto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo { 
+    position: relative;
+    margin-top: 2%;
+    width: auto;
+    height: 1.5vw;
+}
+
+.hblink {
+    color: black;
+    font-size: 1.4vw;
+    margin-top: 0.3%;
+}
+
+.container__header {
+    display: flex;
+    margin-right: 25%;
+    margin-top: -2vw;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.container__header a {
+    font-size: 1.7vw;
+    font-weight: 800px;
+    color: #EEEEEE;
+}
+
+.container__header a:hover {
+    color: black;
+}
+
+#bt3 {
+    position: relative;
+
+}
+
+.container__linha_cabecario {
+    color: black;
+}
+
+.container__barra {
+    background: #134B70;
+    height: 8vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__logo {
+    float: left;
+    width: auto;
+    height: 8vw;
+}
+
+.linha {
+    position: relative;
+    margin-bottom: 3%;
+    opacity: 0;
+}
+
+.bt_logar {
+    position: relative;
+    background-color: #508C9B;
+    margin-left: 78%;
+    padding: 1% 3%;
+    font-size: 1.7vw;
+    color: #eeeeee;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.bt_logar:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+    box-shadow: 0 10px 14px rgba(189, 188, 188, 0.2), 0 12px 26px rgba(177, 174, 174, 0.25);
+}
+
+.modal_class {
+    display: none;
+    position: absolute;
+    background-color: #134B70;
+    width: auto;
+    height: 23.8vw;
+    margin-top: 2.9%;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 2vw;
+    padding: 0.7vw;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.modal_class a:hover {
+    color: #b4d4d8;
+    background-color: transparent;
+}
+
+.pg_odontoPediatra:hover {
+    font-size: 1.6vw;
+}
+
+.pg_odontoGeriatria:hover {
+    font-size: 1.5vw;
+}
+
+.linha_modal {
+    border: 1px solid white;
+    position: relative;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+.modal_login {
+    display: none;
+    position: absolute;
+    background-color: #134B70;
+    width: auto;
+    height: 9vw;
+    margin-top: 2.9%;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-left: 85.2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal_login a {
+    color: white;
+    font-size: 1.6vw;
+}
+
+.modal_login a:hover {
+    background-color: transparent;
+    color: black;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.Login_paciente {
+    font-size: 1.6vw;
+}
+
+.Login_medico:hover {
+    font-size: 1.6vw;
+}
+
+.Login_ADM:hover {
+    font-size: 1.6vw;
+}
+
+.linha_modal_Login {
+    position: relative;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+.slider {
+    margin: 0 auto;
+    width: 100;
+    height: 34vw;
+    overflow: hidden;
+} 
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img_1 {
+    border-radius: 30px;
+}
+
+.img_2 {
+    border-radius: 30px;
+}
+
+.img_3 {
+    border-radius: 30px;
+}
+
+.img_4 {
+    border-radius: 30px;
+}
+
+.slide img {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70vw;
+}
+
+.manual-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: -4%;
+    margin-bottom: 8%;
+}
+
+.manual-btn {
+    position: relative;
+    border: 2px solid rgb(18, 13, 13);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 2%;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .firt {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .firt {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .firt {
+   margin-left: -50%;
+}
+
+#radio4:checked ~ .firt {
+    margin-left: -75%;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 2%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+.bt_agendar {
+    position: relative;
+    margin-left: 43.5%;
+    background-color: #016193;
+    color: white;
+    font-size: 2vw;
+    font-weight: 300;
+    padding: 1.5% 3%;
+    border-radius: 15px;
+    box-shadow: 2px 3px rgb(0, 0, 0), 3px 4px rgba(0, 0, 0, 0.708);
+    transition: 0.5s;
+}
+
+.bt_agendar:hover {
+    box-shadow: 2px 3px rgb(155, 154, 154);
+    background-color: #25C7DC;
+    color: #1f5f81;
+}
+
+
+
+
+.img_smile {
+    position: relative;
+    width: auto;
+    height: 22vw;
+    margin-top: 5%;
+    margin-left: 23%;
+    border-radius: 15px;
+    opacity: 90%;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.708);
+}
+.quadroB {
+    position: relative;
+    background-color: grey;
+    width: auto;
+    height: 14vw;
+    opacity: 70%;
+    margin-left: 27%;
+    margin-right: 26%;
+    margin-top: -18.5%;
+    border-radius: 20px;
+}
+
+.titu_quadro {
+    position: relative;
+    font-size: 2.3vw;
+    margin-left: 37.9%;
+    margin-top: -8.7%;
+}
+
+
+.linha_divi {
+    position: relative;
+    border: 2px solid rgb(123, 123, 123);
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container__cd_clareamento {
+    position: relative;
+    margin-top: -9%;
+    margin-left: 5%;
+    background-color: #e1dada;
+    width: 23%;
+    height: 27vw;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.img_clareamento {
+    position: relative;
+    margin-top: -20%;
+    height: 14vw;
+    padding: 4%;
+}
+
+.titu_clareamento {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 2.3vw;
+    font-weight: 530;
+}
+
+.linha_carta_1 {
+    position: relative;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.saibaMaisTrata {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    width: 37%;
+    margin-left: 27%;
+    background-color: #508C9B; 
+    color: white;
+    margin-top: 10%;
+    padding: 3.7%;
+    border-radius: 12px; 
+    transition: 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.saibaMaisTrata:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+}
+
+.saibaMaisTrata:active {
+    transform: scale(1.1)
+}
+
+.medalha_silver {
+    position: relative;
+    width: auto;
+    height: 6.7vw;
+    margin-top: -11%;
+    margin-left: -15%;
+}
+
+.container__cd_invisalign {
+    position: relative;
+    background-color: #e1dada;
+    margin-left: 39%;
+    margin-top: -22%;
+    width: 23%;
+    height: 27vw;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.medalha_gold {
+    position: relative;
+    width: auto;
+    height: 6.7vw;
+    margin-top: -11%;
+    margin-left: -15%;
+}
+
+.img_invisa {
+    position: relative;
+    margin-top: -20%;
+    height: 14vw;
+    padding: 4%;
+}
+
+.titu_invisa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 2.3vw;
+    font-weight: 530;
+}
+
+.linha_carta_2 {
+    position: relative;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.saibaMaisTrata2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    width: 37%;
+    margin-left: 27%;
+    background-color: #508C9B; 
+    color: white;
+    margin-top: 10%;
+    padding: 3.7%;
+    border-radius: 12px; 
+    transition: 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.saibaMaisTrata2:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+}
+
+.saibaMaisTrata2:active {
+    transform: scale(1.1)
+}
+
+
+
+
+
+
+
+.container__cd_implante {
+    position: relative;
+    background-color: #e1dada;
+    margin-left: 72%;
+    margin-top: -32.7%;
+    width: 23%;
+    height: 27vw;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.medalha_bronze {
+    position: relative;
+    width: auto;
+    height: 6.7vw;
+    margin-top: -11%;
+    margin-left: -15%;
+}
+
+.img_implate {
+    position: relative;
+    margin-top: -20%;
+    height: 14vw;
+    padding: 4%;
+}
+
+.titu_implante {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 2.3vw;
+    font-weight: 530;
+}
+
+.linha_carta_3 {
+    position: relative;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.saibaMaisTrata3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    width: 37%;
+    margin-left: 27%;
+    background-color: #508C9B; 
+    color: white;
+    margin-top: 10%;
+    padding: 3.7%;
+    border-radius: 12px; 
+    transition: 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.saibaMaisTrata3:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+}
+
+.saibaMaisTrata3:active {
+    transform: scale(1.1)
+}
+
+
+
+
+.img_sala {
+    position: relative;
+    width: auto;
+    margin-left: 20%;
+    margin-top: 5%;
+    height: 23vw;
+    border-radius: 10px;
+}
+
+.formacoes {
+    display: flex;
+    position: relative;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+    height: 15vw;
+    margin-left: 25%;
+    margin-top: -20%;
+}
+
+.container__text_forma {
+    position: relative;
+    margin-left: 57%;
+    margin-top: -20%;
+    margin-right: 14%;
+    margin-bottom: 3.2%;
+}
+
+.titu_forma {
+    position: relative;
+    margin-bottom: 2%;
+    font-size: 2vw;
+}
+
+.text_forma {
+    position: relative;
+    font-size: 1.5vw;
+}
+
+.bt_saibaMais_1 {
+    position: relative;
+    margin-left: 57%;
+    background-color: #016193;
+    color: white;
+    font-family: "minhafonte";
+    font-size: 1.7vw;
+    padding: 1.7vw;
+    border-radius: 30px;
+    box-shadow: 2px 3px rgb(0, 0, 0), 3px 4px rgba(0, 0, 0, 0.708);
+    transition: 0.5s;
+}
+
+.bt_saibaMais_1:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+    box-shadow: 2px 3px rgb(155, 154, 154);
+}
+
+.container__backTrata1 {
+    position: relative;
+    background-color: #134B70;
+    width: 100%;
+    height: 14vw;
+}
+
+.linha_1_trata {
+    position: relative;
+    border: 1.5px solid black;
+    margin-top: 10%;
+}
+
+.titu_trata1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 9.3%;
+    color: white;
+    font-size: 3vw;
+    font-weight: 400;
+
+}
+
+.linha_2_trata {
+    position: relative;
+    border: 1.5px solid black;
+}
+
+.backDepoimentos {
+    position: relative;
+    background-color: #134B70;
+    width: 70%;
+    height: 45vw;
+    margin-left: 15%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.titu_depoimentos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    color: white;
+    font-size: 2.4vw;
+}
+
+
+
+.container__depCaio {
+    position: relative;
+    background-color: #f3ecec;
+    width: 29%;
+    height: 33vw;
+    border-radius: 13px;
+    border: 1px solid rgba(158, 158, 158, 0.616);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ft_caio {
+    width: auto;
+    height: 9vw;
+    margin-top: 5%;
+    margin-left: 35.5%;
+    margin-bottom: 5%;
+    transition: 0.7s;
+    border-radius: 55%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.ft_caio:hover {
+    transform: scale(1.2);
+}
+
+.text_caio {
+    position: relative;
+    margin-left: 3%;
+    font-size: 1.2vw;
+    margin-top: 2%;
+    font-family: "minhaFonte";
+}
+
+.img_estrala1 {
+    position: relative;
+    margin-left: 29%;
+    margin-top: 4%;
+    width: auto;
+    height: 3vw;
+}
+
+.text_nome {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    text-shadow: 1px 2px grey, 2px 3px grey;
+}
+
+.sub_status {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-shadow: 0.5px 1px grey, 1px 2px grey;
+}
+
+
+
+
+
+.container__deJonny{
+    position: relative;
+    background-color: #f3ecec;
+    width: 29%;
+    height: 33vw;
+    border-radius: 13px;
+    border: 1px solid rgba(158, 158, 158, 0.616);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ft_jonny {
+    width: auto;
+    height: 9vw;
+    margin-top: 5%;
+    margin-left: 35.5%;
+    margin-bottom: 5%;
+    transition: 0.8s;
+    border-radius: 55%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.ft_jonny:hover {
+    transform: scale(1.2);
+}
+
+.text_jonny {
+    position: relative;
+    margin-left: 5.3%;
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: "minhaFonte";
+}
+
+.img_estrala2 {
+    position: relative;
+    margin-left: 29%;
+    margin-top: 4%;
+    width: auto;
+    height: 3vw;
+}
+
+.text_nome2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 400;
+    text-shadow: 1px 2px grey, 2px 3px grey;
+}
+
+.sub_status2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-shadow: 0.5px 1px grey, 1px 2px grey;
+}
+
+
+
+
+
+
+
+
+
+.container__deDR{
+    position: relative;
+    background-color: #f3ecec;
+    width: 29%;
+    height: 33vw;
+    border-radius: 13px;
+    border: 1px solid rgba(158, 158, 158, 0.616);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ft_DR {
+    width: auto;
+    border-radius: 55%;
+    height: 9vw;
+    margin-top: 5%;
+    margin-left: 35.5%;
+    margin-bottom: 5%;
+    transition: 0.8s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ft_DR:hover {
+    transform: scale(1.2);
+}
+
+.text_DR {
+    position: relative;
+    font-size: 0.8vw;
+    margin-left: 5%;
+    font-family: "minhaFonte";
+    font-size: 1.3vw;
+}
+
+.img_estrala3 {
+    position: relative;
+    margin-left: 29%;
+    margin-top: 4%;
+    width: auto;
+    height: 3vw;
+}
+
+.text_nome3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 400;
+    text-shadow: 1px 2px grey, 2px 3px grey;
+}
+
+.sub_status3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-shadow: 0.5px 1px grey, 1px 2px grey;
+}
+
+
+
+.container__depoimentos {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -39%;
+    margin-bottom: 15%;
+}
+
+
+
+
+
+
+
+.img_tratamentos {
+    position: relative;
+    width: auto;
+    height: 25vw;
+    margin-top: 7%;
+    border-radius: 15px;
+    margin-left: 62%;
+}
+
+.container__text_trata {
+    position: relative;
+    margin-top: -20%;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+
+.titu_tratamentos {
+    position: relative;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.text_tratamentos {
+    position: relative;
+    font-size: 1.4vw;
+}
+
+.agendarConsulta {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 28%;
+    background-color: #134B70;
+    margin-top: 6%;
+    margin-left: 0%;
+    margin-bottom: 10%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.11), 0 6px 20px rgba(0, 0, 0, 0.119);
+
+}
+
+.agendarConsulta:hover {
+    transition: 0.5s;
+    background-color: #25C7DC;
+    color: #016193;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598), 0 6px 20px rgba(0, 0, 0, 0.616);
+
+}
+
+.linha_divi2 {
+    position: relative;
+    border: 2px solid rgb(123, 123, 123);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    margin-bottom: 6%;
+}
+
+
+.linha_divi4 {
+    position: relative;
+    border: 2px solid rgb(123, 123, 123);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 13%;
+}
+
+
+
+
+
+
+.container__tabelinha {
+    border-radius: 15px;
+    display: flex;
+    background-color: #508C9B;
+    margin-top: -2%;
+    margin-right: 5%;
+    height: 4vw;
+    width: auto;
+    float: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598), 0 6px 20px rgba(0, 0, 0, 0.616);
+}
+
+.tabelinha_principal {
+    color: white;
+    font-size: 1.1vw;
+}
+
+.container__rodape {
+    background-color: #134B70;
+    height: 110%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.598), 0 6px 20px rgba(0, 0, 0, 0.616);
+}
+
+.central {
+    position: relative;
+    color: rgb(194, 194, 194);
+    display: flex;
+    font-size: 1.6vw;
+    margin-left: 10%;
+}
+
+.central1 {
+    display: flex;
+    font-size: 2vw;
+    margin-left: 10%;
+    margin-top: 2em;
+    color: #508C9B;
+}
+
+.container__linha_1 {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 1em;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.container__imagens {
+    display: flex;
+    position: relative;
+    margin-left: 48%;
+    margin-top: -14.5%;
+}
+
+
+.container__linha_pé {
+    display: flex;
+    border: 1px solid black;
+}
+
+.certi {
+    display: flex;
+    font-size: 2vw;
+    color: #508C9B;
+}
+
+.container__2barra {
+    position: relative;
+    margin-bottom: 2%;
+    width: auto;
+    height: 14vw;
+}
+
+.container__3barra {
+    position: relative;
+    margin-top: 2%;
+    width: auto;
+    height: 10vw;
+}
+
+.container__4barra {
+    position: relative;
+    width: auto;
+    height: 10vw;
+}
+
+.texto1 {
+    color: rgb(194, 194, 194);
+    position: relative;
+    margin-left: 10%;
+}
+
+.container__privacidade {
+    margin: 0 0 8em;
+    margin-top: -11.8em;
+    margin-left: 50em;
+}
+
+.container__titulo2 {
+    display: flex;
+    margin-top: 2%;
+    font-size: 2.2vw;
+    color: #508C9B;
+}
+
+.container__titulo3 {
+    display: flex;
+    font-size: 2.2vw;
+    color: #508C9B;
+}
+
+.container__texto2 {
+    position: relative;
+    margin-top: 0.6em;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.container__texto2 a {
+    position: relative;
+    color: rgb(194, 194, 194);
+}
+
+
+.container__texto3 {
+    display: flex;
+    margin-top: -0.5em;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.container__linha_2 {
+    margin: 0 5em;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.container__color {
+    color: #508C9B;
+}
+
+.container__chao {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 7%;
+}
+
+.container__img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__img_1 {
+    position: relative;
+    margin-left: 9%;
+    width: auto;
+    height: 7vw;
+}
+
+.container__img_2 {
+    position: relative;
+    width: auto;
+    height: 7vw;
+    margin-right: 9.3%;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.container__redes {
+    position: relative;
+    color: #508C9B;
+    font-size: 2vw;
+    margin-bottom: 1%;
+}
+
+.container__texto3 a {
+    color: black;
+}
+
+
+
+.slider {
+    margin: 0 auto;
+    width: 100;
+    height: 34vw;
+    overflow: hidden;
+} 
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.img_1 {
+    border-radius: 30px;
+}
+
+.img_2 {
+    border-radius: 30px;
+}
+
+.img_3 {
+    border-radius: 30px;
+}
+
+.img_4 {
+    border-radius: 30px;
+}
+
+.slide img {
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70vw;
+}
+
+.manual-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: -4%;
+    margin-bottom: 8%;
+}
+
+.manual-btn {
+    position: relative;
+    border: 2px solid rgb(18, 13, 13);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 2%;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .firt {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .firt {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .firt {
+   margin-left: -50%;
+}
+
+#radio4:checked ~ .firt {
+    margin-left: -75%;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 2%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+.bt_agendar {
+    position: relative;
+    margin-left: 43.5%;
+    background-color: #016193;
+    color: white;
+    font-size: 2vw;
+    font-family: "minhaFonte";
+    font-weight: 300;
+    padding: 1.5% 3%;
+    border-radius: 15px;
+    box-shadow: 2px 3px rgb(0, 0, 0), 3px 4px rgba(0, 0, 0, 0.708);
+    transition: 0.5s;
+}
+
+.bt_agendar:hover {
+    box-shadow: 2px 3px rgb(155, 154, 154);
+    background-color: #25C7DC;
+    color: #1f5f81;
+}
+
+
+
+
+.img_smile {
+    position: relative;
+    width: auto;
+    height: 22vw;
+    margin-top: 5%;
+    margin-left: 23%;
+    border-radius: 15px;
+    opacity: 90%;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.708);
+}
+.quadroB {
+    position: relative;
+    background-color: grey;
+    width: auto;
+    height: 14vw;
+    opacity: 70%;
+    margin-left: 27%;
+    margin-right: 26%;
+    margin-top: -18.5%;
+    border-radius: 20px;
+}
+
+.titu_quadro {
+    position: relative;
+    font-size: 2.3vw;
+    margin-left: 37.9%;
+    margin-top: -8.7%;
+}
+
+
+.linha_divi {
+    position: relative;
+    border: 2px solid rgb(123, 123, 123);
+    margin-top: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container__cd_clareamento {
+    position: relative;
+    margin-top: -9%;
+    margin-left: 5%;
+    background-color: #e1dada;
+    width: 23%;
+    height: 27vw;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.img_clareamento {
+    position: relative;
+    margin-top: -20%;
+    height: 14vw;
+    padding: 4%;
+}
+
+.titu_clareamento {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 2.3vw;
+    font-weight: 530;
+}
+
+.linha_carta_1 {
+    position: relative;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.saibaMaisTrata {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    width: 37%;
+    margin-left: 27%;
+    background-color: #508C9B; 
+    color: white;
+    margin-top: 10%;
+    padding: 3.7%;
+    border-radius: 12px; 
+    transition: 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.saibaMaisTrata:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+}
+
+.saibaMaisTrata:active {
+    transform: scale(1.1)
+}
+
+.medalha_silver {
+    position: relative;
+    width: auto;
+    height: 6.7vw;
+    margin-top: -11%;
+    margin-left: -15%;
+}
+
+.container__cd_invisalign {
+    position: relative;
+    background-color: #e1dada;
+    margin-left: 39%;
+    margin-top: -22%;
+    width: 23%;
+    height: 27vw;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.medalha_gold {
+    position: relative;
+    width: auto;
+    height: 6.7vw;
+    margin-top: -11%;
+    margin-left: -15%;
+}
+
+.img_invisa {
+    position: relative;
+    margin-top: -20%;
+    height: 14vw;
+    padding: 4%;
+}
+
+.titu_invisa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: 2.3vw;
+    font-weight: 530;
+}
+
+.linha_carta_2 {
+    position: relative;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.saibaMaisTrata2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    width: 37%;
+    margin-left: 27%;
+    background-color: #508C9B; 
+    color: white;
+    margin-top: 10%;
+    padding: 3.7%;
+    border-radius: 12px; 
+    transition: 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.saibaMaisTrata2:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+}
+
+.saibaMaisTrata2:active {
+    transform: scale(1.1)
+}
+
+
+.linha_invi {
+    position: relative;
+    margin-top: 2%;
+    opacity: 0%;
+}
+
+
+.linha_invi_teste {
+    position: relative;
+    opacity: 0;
+    margin-top: 2%;
+}

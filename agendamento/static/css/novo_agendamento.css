@@ -1,0 +1,305 @@
+:root {
+    --cor-de-fundo: rgb(255, 255, 255);
+    --cor-do-header-absoluto: #0F90B4;
+    --cor-do-header: #2da3b3;
+    --cor-das-palavras-hb: black;
+    --cor-das-palavras-principais: white;
+}
+
+@font-face {
+    font-family: "minhaFonte";
+    src: url('/core/static/Fonts/Sevillana-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.7s;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: "minhaFonte";
+}
+
+.container__cabecario_absoluto {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-do-header-absoluto);
+    width: 100%;
+    height: 2vw;
+}
+
+strong {
+    color: var(--cor-das-palavras-principais);
+}
+
+
+.container__absoluto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo { 
+    position: relative;
+    margin-top: 2%;
+    width: auto;
+    height: 1.5vw;
+}
+
+.hblink {
+    color: black;
+    font-size: 1.4vw;
+    margin-top: 0.3%;
+}
+
+.container__header {
+    display: flex;
+    margin-right: 25%;
+    margin-top: -2vw;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.container__header a {
+    font-size: 1.7vw;
+    font-weight: 800px;
+    color: #EEEEEE;
+}
+
+.container__header a:hover {
+    color: black;
+}
+
+#bt3 {
+    position: relative;
+
+}
+
+.container__linha_cabecario {
+    color: black;
+}
+
+.container__barra {
+    background: #134B70;
+    height: 8vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__logo {
+    float: left;
+    width: auto;
+    height: 8vw;
+}
+
+.linha {
+    position: relative;
+    margin-bottom: 3%;
+    opacity: 0;
+}
+
+.bt_logar {
+    position: relative;
+    background-color: #508C9B;
+    margin-left: 78%;
+    padding: 1% 3%;
+    font-size: 1.7vw;
+    color: #eeeeee;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.bt_logar:hover {
+    color: #1f5f81;
+    background-color: #39d7ec;
+    box-shadow: 0 10px 14px rgba(189, 188, 188, 0.2), 0 12px 26px rgba(177, 174, 174, 0.25);
+}
+
+.modal_class {
+    display: none;
+    position: absolute;
+    background-color: #134B70;
+    width: auto;
+    height: 23.8vw;
+    margin-top: 2.9%;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 2vw;
+    padding: 0.7vw;
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.modal_class a:hover {
+    color: #b4d4d8;
+    background-color: transparent;
+}
+
+.pg_odontoPediatra:hover {
+    font-size: 1.6vw;
+}
+
+.pg_odontoGeriatria:hover {
+    font-size: 1.5vw;
+}
+
+.linha_modal {
+    border: 1px solid white;
+    position: relative;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+.modal_login {
+    display: none;
+    position: absolute;
+    background-color: #134B70;
+    width: auto;
+    height: 9vw;
+    margin-top: 2.9%;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 2vw;
+    padding: 1vw;
+    margin-left: 85.2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal_login a {
+    color: white;
+    font-size: 1.6vw;
+}
+
+.modal_login a:hover {
+    background-color: transparent;
+    color: black;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.Login_paciente {
+    font-size: 1.6vw;
+}
+
+.Login_medico:hover {
+    font-size: 1.6vw;
+}
+
+.Login_ADM:hover {
+    font-size: 1.6vw;
+}
+
+.linha_modal_Login {
+    position: relative;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.linha_invi_teste {
+    position: relative;
+    opacity: 0;
+    margin-top: 2%;
+}
+
+
+/* Reset de margens e paddings para garantir consistência */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Estilização do Header */
+.header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header h1 {
+    font-size: 1.75rem;
+    color: #003366;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    color: #003366;
+}
+
+/* Estilização dos Links */
+a {
+    color: #007bff; /* Azul claro */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+}
+
+td a {
+    color: #007bff; /* Azul claro */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilização do Botão */
+.btn-new {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745; /* Verde */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-new:hover {
+    background-color: #218838; /* Verde escuro */
+}

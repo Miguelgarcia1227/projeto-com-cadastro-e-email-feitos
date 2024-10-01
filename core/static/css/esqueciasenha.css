@@ -1,0 +1,230 @@
+:root {
+    --cor-de-fundo: rgb(255, 255, 255);
+    --cor-do-header-absoluto: #0F90B4;
+    --cor-do-header: #3696A3;
+    --cor-das-palavras-hb: black;
+    --cor-das-palavras-principais: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #016193;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container_login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--cor-de-fundo);
+    border-radius: 8px;
+}
+
+.container_senha{
+    display:flex ;
+}
+
+.container_novasenha svg{
+    padding: 0% 2.5% 0% 0%;
+    margin-top: 4%;
+    margin-left: -14%;
+}
+
+.container_novasenha, .container_senha {
+    background-color: #EEFBFD;
+    border: 3.5px solid #8CEFFB;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    margin-left: 30%;
+    margin-right: 50%;
+
+}
+
+.container_novasenha input, .container_senha input {
+    text-align: center;
+    height: 3.5vw;
+}
+
+.container_novasenha input, .container_senha input {
+    border: none;
+    background-color: #EEFBFD;
+    width: 100%;
+    padding: 0%;
+    font-size: 1rem;
+}
+
+.button-acesseaconta {
+    background-color: #3696A3;
+    color: #000000;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 0% 1.5%;; /* Padding adequado */
+    display: inline-block; /* Assegura que o botão se ajuste ao conteúdo */
+    margin-top: 1rem;
+}
+.button-acesseaconta a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 3rem;
+    
+}
+
+.container_quadradointerno {
+    background-color: #ffffff00;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.container_lembrarmeusdados{
+    display: flex;
+    margin-left: 31.5%;
+    margin-top: 1%;
+}
+
+.container_acesseaconta{
+    display: flex;
+    margin-left: 33.5%;
+}
+
+.container_esqueciasenha{
+    display: flex;
+    padding-top:1%;
+    padding-left: 32.5%;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.container_esqueciasenha a{
+    color: black;
+}
+
+.container_novasenha{
+    display: flex;
+    padding: 0 2.3% 0 0;
+}
+
+form{
+    margin-left: 15%;
+}
+
+.container_email {
+    background-color: #EEFBFD;
+    border: 3.5px solid #8CEFFB;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    margin-left: 30%;
+    margin-right: 50%;
+    padding: 0%;
+}
+
+.container_email input{
+    border: none;
+    background-color: #EEFBFD;
+    width: 100%;
+    padding: 0%;
+    font-size: 1rem;
+    text-align: center;
+    height: 3.5vw;
+}
+
+.link_email{
+    color:#3696A3 ;
+}
+
+
+/* Media queries para ajustes responsivos */
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    button {
+        font-size: 0.8125rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .container_login {
+        padding: 1.5rem;
+    }
+
+    .container_novasenha, .container_senha {
+        margin-bottom: 2rem;
+    }
+
+    button {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .container_login {
+        padding: 1rem;
+    }
+
+    .container_novasenha, .container_senha {
+        margin-bottom: 2.5rem;
+    }
+
+    button {
+        font-size: 0.6875rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
+

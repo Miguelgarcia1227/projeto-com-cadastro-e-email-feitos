@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/quemSomos.css' %}">
+    <title>Quem Somos?</title>
+</head>
+<body>
+
+        
+    <nav>
+         
+        <header id="menu" class="container__barra">
+            <a href="{% url 'home' %}"><img id="img_principal"  class="container__logo" src="{% static 'img/logoprincipal.png' %}" alt="Logo da Odonto Locchi"></a>            <hr class="linha">
+            <div id="id_bt_logar" class="container__logar">
+              <a class="bt_logar" href='#'>Logar</a>
+          </div>
+              <div id="id_Login" class="modal_login">
+                  <a href="{%url 'login'%}" class="Login_paciente">Paciente</a>
+                  <hr class="linha_modal_Login">
+                  <a href="{%url 'loginmedico'%}" class="Login_medico">Médico</a>
+                  <hr class="linha_modal_Login">
+                  <a href="/admin" class="Login_ADM">Admin</a>
+              </div>
+                <ul class="container__header">
+                    <li><a class="bt1" href="/home">Início</a></li>
+                    <li><a class="bt2" href="{% url 'quemsomos' %}">Quem Somos</a></li>
+
+                    <li><a id="bt3" href="/Bytech-Pagina tratamentos/index (1).html">Tratamentos</a>
+                          <div id="modal_id"  class="modal_class">
+                              <a href="{% url 'dentista' %}" class="pg_dentista">Dentista</a>
+                              <br>   
+                              <hr class="linha_modal">
+                              <a href="{% url 'cirurgia' %}" class="pg_cirurgia">Cirurgia</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'implante' %}" class="pg_impalnte">Implante</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'protese' %}" class="pg_endorfina">Prótese</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'invisalign' %}" class="pg_invisaling">Invisalign</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'ortodontia' %}" class="pg_ortodontia">Ortondontia</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'pediatra' %}" class="pg_odontoPediatra">Odonto Pediatra</a>
+                              <br>
+                              <hr class="linha_modal">
+                              <a href="{% url 'geri' %}" class="pg_odontoGeriatria">Odonto Geriatria</a>
+                              <br>
+                          </div></li>
+
+                    <li><a class="bt4" href="{% url 'planos' %}">Planos</a></li>
+                    <li><a class="bt5" href="{% url 'agendamento' %}">Agendar</a></li>
+                  
+
+                </ul>
+                
+               
+                  <hr class="linha_invi_teste">
+          </header>
+   </nav>
+   <main>
+        <h1 class="titu_principal">Odonto locchi</h1>
+        <hr class="linha_divi">
+        
+        <div class="primeiro_quadro">
+
+            <img src="{% static "/img/img_medQuemSomos.png" %}" alt="" class="img_quemSomos">
+
+            <div class="container__text_quemSomos">
+
+                <hr class="linha_invi">
+
+                <h1 class="titu_quemSomos">Quem Somos ?</h1>
+
+                <hr class="linha_divi_cd">
+
+                <h3 class="text_quemSomos">A Odontos Locchi é a operadora</h3>
+                <h3 class="text_quemSomos">odontológica do Sistema Locchi, sobre a</h3>
+                <h3 class="text_quemSomos">gestão da Locchi Seguros. Com atuação</h3>
+                <h3 class="text_quemSomos">desde 2009 e sede em São Paulo, possui</h3>
+                <h3 class="text_quemSomos">uma carteira com mais de 450 mil</h3>
+                <h3 class="text_quemSomos">beneficiários, mantendo</h3>
+                <h3 class="text_quemSomos">representatividade em todo território nacional.</h3>
+                <h3 class="text_quemSomos">Segundo a Agência Nacional de Saúde Suplementar (ANS), a Odontos Locchi se</h3>
+                <h3 class="text_quemSomos">mantém, historicamente, nas melhores</h3>
+                <h3 class="text_quemSomos">faixas do Índice de Desempenho da</h3>
+                <h3 class="text_quemSomos">Saúde Suplementar (IDSS) e compõe o</h3>
+                <h3 class="text_quemSomos">Programa de Qualificação das</h3>
+                <h3 class="text_quemSomos">Operadoras, além de conservar posição</h3>
+                <h3 class="text_quemSomos">de excelência no Índice de Reclamações.</h3>
+            </div>
+        </div>
+
+        <hr class="linha_divi_2">
+
+        <div class="segundo_quadrado">
+
+            <hr class="linha_invi">
+
+            <h1 class="titu_serviços">Nossos Serviços</h1>
+
+            <hr class="linha_divi_3">
+
+            <div class="quadros_trata">
+
+                <div class="bene_quadro">
+
+                    <img src="{% static "/img/img_bene.png" %}" alt="" class="img_bene">
+                    <h1 class="titu_bene">Benefício dos Tratamentos</h1>
+
+                    <hr class="linha_divi_card">
+
+                    <h3 class="text_bene">- Alívio efetivo da dor;</h3>
+                    <h3 class="text_bene">- Restabelecimento da capacidade respiratóra;</h3>
+                    <h3 class="text_bene">- Alinhamento da mastigação;</h3>
+                    <h3 class="text_bene">- Melhora digestiva;</h3>
+                    <h3 class="text_bene">- Qualidade na articulação da fala;</h3>
+                    <h3 class="text_bene">- Equilíbrio estético;</h3>
+                    <h3 class="text_bene">- Sono mais calmo e tranquilo;</h3>
+                    <h3 class="text_bene">- Restauração emocional;</h3>
+
+                </div>
+
+                <div class="especia_quadro">
+
+                    <img src="{% static "/img/img_pin.png" %}" alt="" class="img_especia">
+                    <h1 class="titu_expeci">Especialidades</h1>
+
+                    <hr class="linha_divi_card">
+
+                    <h3 class="text_especi">- Cirurgia Bucomaxilofacial;</h3>
+                    <h3 class="text_especi">- Ortodontia;</h3>
+                    <h3 class="text_especi">- Ortodontia com preparo cirúrgico;</h3>
+                    <h3 class="text_especi">- Tratamento PN;</h3>
+                    <h3 class="text_especi">- Odontopediatria;</h3>
+                    <h3 class="text_especi">- Endodontia;</h3>
+                    <h3 class="text_especi">- Clínica Geral Odontológica;</h3>
+                    <h3 class="text_especi">- Dor Facial;</h3>
+                    <h3 class="text_especi">- Dor em ATM (DTM);</h3>
+
+
+                </div>
+
+                <div class="agendamento_quadro">
+
+                    <img src="{% static "/img/img_calendario.png" %}" alt="" class="img_agend">
+                    <h1 class="titu_agend">Agendamento</h1>
+
+                    <hr class="linha_divi_card">
+
+                    <h3 class="text_agend">Horário de atendimento: de</h3>
+                    <h3 class="text_agend">segunda-feira à sexta-feira, das 8</h3>
+                    <h3 class="text_agend">horas às 19 horas. Agendamentos</h3>
+                    <h3 class="text_agend">pelo whatsApp (11) 99826-3229</h3>
+                    <h3 class="text_agend">Telefones Clínica Ruman: </h3>
+                    <h3 class="text_agend">(11) 3681-2169 / 3655-6963 Endereço</h3>
+                    <h3 class="text_agend">Matriz: Av. Hilário Pereira de</h3>
+                    <h3 class="text_agend">Souza, 406 - sala 2515 - Torre 2 -</h3>
+                    <h3 class="text_agend">Centro Empresarial Jardins</h3>
+                    <h3 class="text_agend">do Brasil - Osasco.</h3>
+                </div>
+
+                <hr class="linha_invi">
+            </div>
+
+        </div>
+
+        <div class="terceiro_quadro">
+
+            <hr class="linha_divi">
+
+            <h1 class="titu_dif">O que nos diferencia ?</h1>
+
+            <div class="container__cards">
+
+                <div class="container__dente">
+
+                    <img src="{% static "/img/img_iconDente.png" %}" alt="" class="img_dente">
+                    <h3 class="text_dente">Ampla Cobertura</h3>
+                    <h3 class="text_dente">de Procedimentos.</h3>
+    
+                </div>
+    
+                <div class="container__porco">
+    
+                    <img src="{% static "/img/img_iconPorco.png" %}" alt="" class="img_porco">
+                    <h3 class="text_porco">Preços acessíveis.</h3>
+    
+                </div>
+    
+                <div class="container__coracao">
+                    <img src="{% static "/img/img_iconCoracao.png" %}" alt="" class="img_cocacao">
+                    <h3 class="text_coracao">Cuidado com os</h3>
+                    <h3 class="text_coracao">pacientes do inicio</h3>
+                    <h3 class="text_coracao">ao fim.</h3>
+    
+                </div>
+    
+                <div class="container__famili">
+    
+                    <img src="{% static "/img/img_iconFamilia.png" %}" alt="" class="img_familia">
+                    <h3 class="text_famili">Preparado para</h3>
+                    <h3 class="text_famili">atender você e sua</h3>
+                    <h3 class="text_famili">familia.</h3>
+    
+                </div>
+
+            </div>
+        
+            <hr class="linha_divi_ulti">
+        </div>
+   </main>
+
+
+   <div class="container__tabelinha">
+
+    <img src="{% static 'img/horario.png.png'%}" alt="logo de horario">
+       <h4 class="tabelinha_principal">Horarios Seg - Sex: 08:00 - 18:00</h4>
+    <img src="{% static 'img/telefone.png.png'%}" alt="logo do telefone">
+       <h4 class="tabelinha_principal">+55 (11) 9-9369-8558</h4>
+    <img src="{% static 'img/email.png.png'%}" alt="logo do email">
+       <h4 class="tabelinha_principal">Plocchi@terra.com.br</h4>
+  </div> 
+
+
+
+   <footer class="container__rodape"> 
+        
+          <div class="container__central_ajuda"> 
+              <h3 class="central1">Central De Ajuda:</h3>
+              <h5 class="central">Dúvidas, reclamações</h5>
+              <h5 class="central"> e sugestões:</h5>
+              <h5 class="central">+55 (11) 9-9369-8558</h5>
+          </div>
+
+         <div class="container__odonto_locchi">
+
+              <hr class="container__linha_1">
+
+
+          <div class="texto1">
+             <h3 class="container__titulo2">A Odonto locchi</h3>
+             <p></p>
+             <h5 class="container__texto2"><a href="/index/quemsomos.html">Quem somos</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a href="/Bytech-Pagina tratamentos/index (1).html">Nossos tratamentos</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a href="https://web.whatsapp.com/">Central de ajuda</a></h5>
+             <p></p>
+             <h5 class="container__texto2"><a href="/index/contato.html">Contato</a></h5>
+             <p></p>
+         </div>
+
+         <div class="container__imagens">
+            <img class="container__2barra" src="{% static 'img/qrcode1.png'%}" alt="primeiro qrcode">
+            <img class="container__3barra" src="{% static 'img/redebrasil.png'%}" alt="rede brasil">
+            <img class="container__4barra" src="{% static 'img/qrcode2.png'%}" alt="segundo qrcode">
+          </div>
+
+         <hr class="container__linha_2">
+        <div class="container__chao">
+            <h2 class="container__redes">Siga a <strong class="container__color">Odonto Locchi</strong>nas redes sociais</h2> 
+            <h3 class="container__redes">Certificações de Segurança</h3>
+        </div>
+        <div class="container__img">
+               <img class="container__img_1" src="{% static 'img/redessociais.png'%}" alt="logos de redes sociais">
+               <img class="container__img_2" src="{% static 'img/proteçãodedados.png'%}" alt="logos das proteções de dados">
+        </div>
+            
+        <hr class="linha_invi">
+   </footer>
+     
+</body>
+
+<script src="{% static 'js/script.js' %}"></script>
+</html>

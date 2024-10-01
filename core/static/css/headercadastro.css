@@ -1,0 +1,179 @@
+:root {
+    --cor-de-fundo: rgb(255, 255, 255);
+    --cor-do-header-absoluto: #0F90B4;
+    --cor-do-header: #2da3b3;
+    --cor-das-palavras-hb: black;
+    --cor-das-palavras-principais: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.7s;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.container__cabecario_absoluto {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-do-header-absoluto);
+    width: 100%;
+    height: 2vw;
+}
+
+strong {
+    color: var(--cor-das-palavras-principais);
+}
+
+
+.container__absoluto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo { 
+    position: relative;
+    margin-top: 2%;
+    width: auto;
+    height: 1.5vw;
+}
+
+.hblink {
+    color: black;
+    font-size: 1.4vw;
+    margin-top: 0.3%;
+}
+
+.container__header {
+    display: flex;
+    margin-top: 1.5%;
+    margin-right: 25%;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.container__header a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 800px;
+    color: black;
+}
+
+.container__header a:hover {
+    color: #b4d4d8;
+}
+
+#bt3 {
+    position: relative;
+
+}
+
+.container__linha_cabecario {
+    color: black;
+}
+
+.container__barra {
+    background: var(--cor-do-header);
+    height: 11vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container__logo {
+    float: left;
+    width: auto;
+    height: 10vw;
+}
+
+.container__escova {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 89.1%;
+    margin-bottom: 1.5%;
+    width: auto;
+    height: 4.22vw;
+}
+
+.linha {
+    border: 1px solid black;
+}
+
+.container__bolinha {
+    position: relative;
+    width: auto;
+    height: 2.3vw;
+    margin-top: -2%;
+}
+
+.container__logar {
+    position: relative;
+    margin-left: 91%;
+    margin-top: -2.1%;
+}
+
+.container__logar a {
+    position: relative;
+    width: auto;
+    height: 2.3vw;
+    margin-right: 9%;
+    font-size: 1.7vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800px;
+    color: black;
+}
+
+.conteiner__logar2 {
+    position: relative;
+    margin-left: 96%;
+    margin-top: -2%;
+}
+
+
+
+.modal_class {
+    display: none;
+    position: absolute;
+    background-color: #3696a3;
+    width: auto;
+    height: 23.8vw;
+    border: 1px solid black;
+    margin-top: 1%;
+    min-width: 160px;
+    z-index: 1;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+.modal_class a:hover {
+    background-color: #b4d4d8;
+    color: black;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.pg_odontoPediatra:hover {
+    font-size: 1.6vw;
+}
+
+.pg_odontoGeriatria:hover {
+    font-size: 1.6vw;
+}
+
+.linha_modal {
+    position: relative;
+    border: 1px solid black;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
